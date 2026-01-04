@@ -1,3 +1,13 @@
 from django.contrib import admin
+from .models import ReportData,Event,VEN
 
-# Register your models here.
+@admin.register(VEN)
+class VEN(admin.ModelAdmin):
+    pass
+@admin.register(ReportData)
+class ReportData(admin.ModelAdmin):
+    pass
+
+@admin.register(Event)
+class Event(admin.ModelAdmin):
+    pass
