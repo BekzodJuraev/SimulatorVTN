@@ -42,9 +42,7 @@ async def event_response_callback(ven_id, event_id, opt_type):
 
 
 async def on_update_report(report):
-    """
-    This handler is called when the VEN sends telemetry data.
-    """
+
     ven_id = report.get("ven_id")
     resource_id = report.get("resource_id")
     measurement = report.get("measurement")
